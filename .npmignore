@@ -1,7 +1,17 @@
-### Example user template template
-### Example user template
+#tests
+test
+coverage
 
-# IntelliJ project files
+#build tools
+.travis.yml
+.jenkins.yml
+.codeclimate.yml
+
+#linters
+.jscsrc
+.jshintrc
+.eslintrc*
+
+#editor settings
 .idea
-out
-gen
+.editorconfig
