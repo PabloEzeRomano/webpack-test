@@ -1,6 +1,6 @@
 {
   "name": "webpack_test",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Test for npm library with react and webpack",
   "main": "index.js",
   "scripts": {
