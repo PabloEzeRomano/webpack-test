@@ -2,7 +2,7 @@
   "name": "webpack_test",
   "version": "0.1.7",
   "description": "Test for npm library with react and webpack",
-  "main": "build/build.js",
+  "main": "build/bundle.js",
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
     "build": "webpack --config webpack.prod.config.js"
