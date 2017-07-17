@@ -37,52 +37,25 @@ module.exports = {
           fallback: 'style-loader',
         }),
       }],
-    // loaders: [
-    //   // { test: /\.scss$/, loaders: ['style', 'css', 'sass'] },
-    //   // {
-    //   //   test: /\.scss$/,
-    //   //   loader: ExtractTextPlugin.extract('style-loader', 'css-loader', 'sass-loader'),
-    //   // },
-    //   {
-    //     test: /\.css$/,
-    //     loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
-    //   },
-    //   {
-    //     test: /\.jsx?$/,
-    //     exclude: /node_modules/,
-    //     loaders: ['react-hot-loader', 'babel-loader?presets[]=latest,presets[]=react'],
-    //   },
-    //   {
-    //     test: /\.jsx?$/,
-    //     exclude: /node_modules/,
-    //     loaders: ['eslint-loader'],
-    //   },
-    //   {
-    //     test: /\.html$/,
-    //     loaders: ['file?name=[name].[ext]'],
-    //   },
-    // ],
-    // loaders: [
-    //   // Process JS with Babel.
-    //   {
-    //     test: /\.(js|jsx)$/,
-    //     loader: 'babel-loader',
-    //     exclude: /node_modules/,
-    //     query: {
-    //       presets: ['react', 'es2015'],
-    //     },
-    //   },
-    //   {
-    //     test: /\.scss$/,
-    //     include: appSrc,
-    //     loaders: ['style', 'css', 'scss'],
-    //   },
-    //   {
-    //     test: /\.css$/,
-    //     include: appSrc,
-    //     loaders: ['style', 'css', 'scss'],
-    //   },
-    // ],
+    loaders: [
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader', 'sass-loader'),
+      },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loaders: ['react-hot-loader', 'babel-loader?presets[]=latest,presets[]=react', 'eslint-loader'],
+      },
+      {
+        test: /\.html$/,
+        loaders: ['file?name=[name].[ext]'],
+      },
+    ],
   },
   plugins: [
     extractSass,
