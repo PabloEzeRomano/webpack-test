@@ -1,6 +1,6 @@
 {
   "name": "webpack_test",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Test for npm library with react and webpack",
   "main": "build/build.js",
   "scripts": {
